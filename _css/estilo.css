@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image:url(../_imagens/banner.jpg);
+    background-repeat: no-repeat;
+    height:100vh;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    color:green;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+/* topo do site menu e ogo */
+h1{
+    font-family: 'Press Start 2P', cursive;
+}
+header{
+    margin:0 auto;
+    height:100px;
+    padding:30px 50px;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.596);
+}
+nav{
+    width:100%;
+}
+ul{
+    margin:10px 0px;
+    float: right;
+}
+ul li{
+    display: inline;
+    
+}
+ul li a{
+    display: inline;
+    padding: 8px 10px;
+    color:white;
+}
+ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.479);
+    color:green;
+}
+/* destaque */
+.text{
+    background-color: rgba(0, 0, 0, 0.795);
+    position: relative;
+    margin:150px 100px;
+    padding:60px;
+    text-align: center;
+    animation: tex 3s 2s 1;
+}
+@keyframes tex{
+    from{
+        left:-900px;
+    }
+    to{
+        left:0px;
+    }
+}
+.text h2::before{
+    content: '\201c';
+}
+.text h2::after{
+    content: '\201d';
+}
+.text h2{
+    color:green;
+    font-size: 2.3em;
+}
+.text p{
+    margin:20px;
+
+}
+/* info */
+.div-info{
+    height:500px;
+    text-align:center;
+    color:green;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.795);
+    padding:40px;
+}
+.info{
+    display: flex;
+    margin:50px 10px;
+}
+.col{
+    width:400px;
+    padding: 20px;
+    transition: all 1s;
+}
+.col:hover{
+    background-color: black;
+}
+.col p{
+    text-align: justify;
+    margin:15px 0px;
+}
+/* page jogos */
+.games{
+    margin:30px auto;
+    width:90%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.795);
+}
+.info-games{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-games{
+    height:100%;
+}
+.col img{
+    width:200px;
+    border-radius:10%;
+}
